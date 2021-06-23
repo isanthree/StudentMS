@@ -45,4 +45,18 @@ public class View {
         return item;
     }
 
+    // 添加学生信息视图
+    // @return：新的 User 对象 User(uname, upass)
+    public static User addMenuView() {
+        System.out.println("************************************************************");
+        System.out.println("****************\t\t请根据提示操作\t\t****************");
+        System.out.println("****************\t\t请输入账号\t\t********************");
+        String uname = input.nextLine();
+        System.out.println("****************\t\t请输入密码\t\t********************");
+        String upass = input.nextLine();
+        System.out.println("************************************************************");
+
+        return new User(uname, upass);
+    }
+
 }
