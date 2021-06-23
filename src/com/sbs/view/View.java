@@ -59,4 +59,48 @@ public class View {
         return new User(uname, upass);
     }
 
+    /**
+     * 删除用户界面
+     * @return 返回删除的学生账号
+     */
+    public static String deleteMenuView(){
+        System.out.println("***********************************");
+        System.out.println("********\t删除用户界面\t*******");
+        System.out.println("*********\t请根据提示操作\t*******");
+        System.out.println("**********\t请输入要删除的学生账号：\t***********");
+        String uname = input.nextLine();
+        System.out.println("***********************************");
+        return uname;
+    }
+
+    /**
+     * 更新修改用户界面
+     * @return User(uname,upass)
+     */
+    public static User updateMenuView(){
+        System.out.println("***********************************");
+        System.out.println("********\t修改用户界面\t*******");
+        System.out.println("*********\t请根据提示操作\t*******");
+        System.out.println("**********\t请输入账号：\t***********");
+        String uname = input.nextLine();
+        System.out.println("**********\t请输入新密码：\t***********");
+        String upass = input.nextLine();
+        System.out.println("***********************************");
+        return new User(uname,upass);
+    }
+
+    /**
+     * 查询用户界面
+     * @return 返回查询的用户信息
+     */
+    public static String selectMenuView(){
+        System.out.println("***********************************");
+        System.out.println("********\t查询用户界面\t*******");
+        System.out.println("*********\t请根据提示操作\t*******");
+        System.out.println("**********\t请输入查询账号：\t***********");
+        String uname = input.nextLine();
+        System.out.println("***********************************");
+        return uname;
+    }
+
 }
