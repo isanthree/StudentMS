@@ -12,9 +12,9 @@ public interface UserDao {
 
     boolean insert(User user);
 
-    boolean delete(String name);
+    boolean delete(String uname);
 
-    boolean update(String name);
+    boolean update(User user);
 
     User select(String uname);
 
